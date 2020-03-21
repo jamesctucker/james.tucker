@@ -40,7 +40,7 @@
       v-if="isPost"
       :isLight="isLight"
       class="is-hidden-mobile"
-      style="margin: 2em 0em; padding: 1.75em 0em 0em"
+      style="margin: 2em 0em 0em; padding: 1.75em 0em 0em 1.75em"
     />
     <nuxt-child :isLight="isLight" class="main-children" />
     <Links

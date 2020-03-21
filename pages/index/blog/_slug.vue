@@ -103,7 +103,7 @@ export default {
   flex-direction: column;
   align-items: center;
   left: 0;
-  padding: 1.75em;
+  padding: 0em 0em 1.75em 1.75em;
 }
 
 .blog__hero {
