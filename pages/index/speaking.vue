@@ -23,7 +23,7 @@ export default {
 
 .talks-text {
   color: white;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .light {

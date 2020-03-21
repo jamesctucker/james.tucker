@@ -212,7 +212,7 @@ export default {
   background: transparent;
   border: none;
   padding: 1em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .pagination-btn:hover {

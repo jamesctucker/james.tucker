@@ -158,7 +158,7 @@ export default {
 
 .work-text {
   color: white;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .light {
@@ -184,7 +184,7 @@ export default {
 }
 
 .title {
-  font-family: "Spectral", serif;
+  font-family: "Taviraj", serif;
 }
 
 .card-footer {
@@ -195,7 +195,7 @@ export default {
 
 .footer-link {
   color: black;
-  font-family: "Spectral", serif;
+  font-family: "Taviraj", serif;
 }
 
 .footer-link:hover {

@@ -133,7 +133,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   word-wrap: break-word;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .blog__tags {

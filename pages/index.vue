@@ -123,8 +123,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Spectral&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Taviraj&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gotu|Taviraj&display=swap");
 
@@ -184,7 +182,8 @@ p {
 }
 
 .home {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
+
   color: white;
   background: transparent;
   border: none;
@@ -203,13 +202,13 @@ p {
 .dark-btn {
   background: transparent;
   border: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .light-btn {
   background: transparent;
   border: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gotu", sans-serif;
 }
 
 .toggled {
