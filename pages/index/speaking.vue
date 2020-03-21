@@ -1,6 +1,8 @@
 <template>
   <div class="talks-view">
-    <p class="talks-text is-size-3" :class="{ light: isLight }">Coming soon!</p>
+    <p class="talks-text is-size-3 has-text-left" :class="{ light: isLight }">
+      Coming soon!
+    </p>
   </div>
 </template>
 
@@ -16,7 +18,6 @@ export default {
 <style scoped>
 .talks-view {
   height: 60vh;
-  padding: 3em;
   display: flex;
   align-items: center;
 }
@@ -35,9 +36,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     min-height: 60vh;
-    padding: 3.5em;
   }
 }
 </style>

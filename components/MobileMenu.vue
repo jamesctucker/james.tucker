@@ -2,7 +2,7 @@
   <div class="dropdown" :class="{ 'is-active': showDropDown }">
     <div class="dropdown-trigger">
       <button
-        class="button dropdown-button"
+        class="button dropdown-button is-paddingless"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
       >
@@ -89,7 +89,6 @@ export default {
 
 <style>
 .dropdown-menu {
-  padding: 1em;
   width: 100vw;
   filter: drop-shadow(3px 1px 2px #113134);
 }

@@ -7,7 +7,7 @@
             class="has-text-left"
             :class="{ 'white-text': !isLight, 'dark-text': isLight }"
           >
-            👋 Hi, I’m James. I’m a full stack developer that loves beautiful
+            👋 Hi, I’m James. I’m a full stack developer who loves beautiful
             design.
           </h1>
           <br />
@@ -43,9 +43,8 @@ export default {
 </script>
 <style scoped>
 .home-view {
-  padding: 1.75em;
   min-height: 60vh;
-  width: fit-content;
+  width: 75vw;
   display: flex;
   align-items: center;
 }
@@ -54,7 +53,7 @@ export default {
   min-width: 60vw;
 } */
 .subtitle {
-  width: 65vw;
+  width: 45vw;
   text-align: left;
 }
 
@@ -92,10 +91,14 @@ export default {
     align-items: center;
     min-height: 60vh;
     position: unset;
-    padding: 1.5em;
     margin: 4em 0em;
     width: 100%;
   }
+
+  .subtitle {
+    width: 75vw;
+  }
+
   .avatar-container {
     display: flex;
     flex-direction: column;

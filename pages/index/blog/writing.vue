@@ -52,7 +52,6 @@ export default {
 </script>
 <style scoped>
 .writing-view {
-  padding: 1.75em;
   width: 60vw;
 }
 

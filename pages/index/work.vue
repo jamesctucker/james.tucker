@@ -149,7 +149,6 @@ export default {
 
 <style scoped>
 .work-view {
-  padding: 2em;
   min-height: 60vh;
   max-width: 100%;
   display: flex;

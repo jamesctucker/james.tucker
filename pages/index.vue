@@ -1,54 +1,51 @@
 <template>
   <div class="main-container" :class="{ 'light-background': isLight }">
     <!-- <Home :isLight="isLight" /> -->
-    <div @click="toggleDropDown">
-      <MobileMenu
-        class="mobile-menu is-hidden-tablet"
-        :showDropDown="isToggled"
-        :isLight="isLight"
-      />
-    </div>
+    <div class="nav">
+      <div @click="toggleDropDown">
+        <MobileMenu
+          class="mobile-menu is-hidden-tablet is-pulled-left"
+          :showDropDown="isToggled"
+          :isLight="isLight"
+        />
+      </div>
 
-    <div class="display-togglers">
-      <button
-        v-if="isLight"
-        @click="toggleDark"
-        class="dark-btn is-size-5 is-size-6-mobile"
-      >
-        <font-awesome-icon icon="moon" style="margin-right: .5em" />DARK MODE
-      </button>
-      <button
-        v-if="!isLight"
-        @click="toggleLight"
-        class="light-btn is-size-5 is-size-6-mobile"
-        :class="{ toggled: !isLight }"
-      >
-        <font-awesome-icon icon="sun" style="margin-right: .5em" />LIGHT MODE
-      </button>
-    </div>
-    <div class="back-button">
-      <a
-        v-if="!isHome"
-        @click="$router.go(-1)"
-        class="home is-size-5 is-size-6-mobile"
-        :class="{ 'home-toggled': isLight }"
-        >back</a
-      >
+      <div class="display-togglers is-pulled-right is-paddingless">
+        <button
+          v-if="isLight"
+          @click="toggleDark"
+          class="dark-btn is-size-5 is-size-6-mobile"
+        >
+          <font-awesome-icon icon="moon" style="margin-right: .5em" />DARK MODE
+        </button>
+        <button
+          v-if="!isLight"
+          @click="toggleLight"
+          class="light-btn is-size-5 is-size-6-mobile"
+          :class="{ toggled: !isLight }"
+        >
+          <font-awesome-icon icon="sun" style="margin-right: .5em" />LIGHT MODE
+        </button>
+      </div>
+      <div class="back-button">
+        <a
+          v-if="!isHome"
+          @click="$router.go(-1)"
+          class="home is-size-5 is-size-6-mobile"
+          :class="{ 'home-toggled': isLight }"
+          >back</a
+        >
+      </div>
     </div>
     <Home v-if="$route.name == 'index'" :isLight="isLight" />
     <Links
       v-if="isPost"
       :isLight="isLight"
       class="is-hidden-mobile"
-      style="margin: 2em 0em 0em; padding: 1.75em 0em 0em 1.75em"
+      style="margin: 2em 0em 0em;"
     />
     <nuxt-child :isLight="isLight" class="main-children" />
-    <Links
-      v-if="!isPost"
-      :isLight="isLight"
-      style="padding: 1.75em;"
-      class="is-hidden-mobile"
-    />
+    <Links v-if="!isPost" :isLight="isLight" class="is-hidden-mobile" />
     <Footer :isLight="isLight" />
   </div>
 </template>
@@ -133,7 +130,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   background: #113134;
-  padding: 1em;
+  padding: 1.75em;
 }
 
 h3 {
@@ -157,28 +154,6 @@ p {
 
 .light-background {
   background: white;
-}
-
-.display-togglers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.5em;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1em;
-}
-
-.back-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1em;
-  margin-left: 1em;
 }
 
 .home {
@@ -223,12 +198,15 @@ p {
 
   .back-button {
     margin-top: 4em;
-    padding: 1em;
   }
 
   .display-togglers {
-    padding: 1.5em;
+    padding: 0em;
   }
+
+  // .nav {
+  //   padding: 1.75em;
+  // }
 }
 
 /* Main view transitions; configured in nuxt.config.js */

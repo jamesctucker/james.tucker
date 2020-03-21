@@ -29,7 +29,6 @@ export default {
 
 <style scoped>
 .about-view {
-  padding: 3em;
   max-width: 75vw;
   height: 60vh;
   display: flex;
@@ -53,7 +52,6 @@ export default {
     align-items: center;
     height: 75vh;
     max-width: 100%;
-    padding: 0em 3em;
     margin: 4.5em 0em;
   }
 }

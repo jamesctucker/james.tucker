@@ -1,6 +1,6 @@
 <template>
   <div class="footer" :class="{ light: isLight }">
-    <div class="is-pulled-left">
+    <div class="is-pulled-left is-hidden-mobile">
       <a href="https://github.com/jamesctucker" target="_blank">
         <font-awesome-icon
           :icon="['fab', 'github']"
@@ -34,11 +34,25 @@
         />
       </a>
     </div>
-    <div class="is-pulled-right">
-      <div class="text is-size-7-mobile" :class="{ 'light-text': isLight }">
+    <div class="has-text-left is-hidden-tablet">
+      <div class="text" :class="{ 'light-text': isLight }">
         <p>© Copyright 2019-20</p>
       </div>
-      <div class="text is-size-7-mobile" :class="{ 'light-text': isLight }">
+      <div class="text" :class="{ 'light-text': isLight }">
+        <p>
+          Theme by James Tucker
+        </p>
+        <p>
+          Proudly made with
+          <a href="https://vuejs.org/" target="_blank">Vue</a> & lots of Scotch
+        </p>
+      </div>
+    </div>
+    <div class="is-pulled-right has-text-right is-hidden-mobile">
+      <div class="text" :class="{ 'light-text': isLight }">
+        <p>© Copyright 2019-20</p>
+      </div>
+      <div class="text" :class="{ 'light-text': isLight }">
         <p>
           Theme by James Tucker
         </p>
@@ -65,7 +79,8 @@ export default {
   border-top: 1px dotted white;
   background: #113134;
   width: 100%;
-  padding: 1.75em;
+  padding: 1.75em 0em !important;
+  margin-top: 1.75em;
 
   /* display: flex;
   justify-content: center; */
@@ -89,13 +104,11 @@ export default {
   background: white;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding: 1.75em;
+  
   }
-}
+} */
 </style>

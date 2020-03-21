@@ -100,7 +100,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  width: 65vw;
+  width: 50vw;
 }
 
 .article {
@@ -108,7 +108,6 @@ export default {
   flex-direction: column;
   align-items: center;
   left: 0;
-  padding: 0em 0em 1.75em 1.75em;
 }
 
 .article-title {
@@ -134,7 +133,6 @@ export default {
 
 .blog__info {
   text-align: center;
-  padding: 1.5rem 1.25rem;
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px dotted white;
@@ -212,7 +210,11 @@ export default {
 @media (max-width: 768px) {
   .article {
     width: 100%;
-    padding: 0.25em;
+    margin: 1.75em 0em 0em;
+  }
+
+  .article-view {
+    width: 100%;
   }
 
   .blog__hero {

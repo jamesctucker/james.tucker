@@ -10,7 +10,7 @@
     <div class="bloglist-container">
       <ul class="list">
         <div v-for="post in sortedPosts" :key="post.attributes.title">
-          <li class="list-item" :class="{ light: isLight }">
+          <li class="list-item is-paddingless" :class="{ light: isLight }">
             <div class="blog-info">
               <nuxt-link :to="`/blog/${post.attributes.slug}`">
                 <h2 class="blog-title title is-marginless">
@@ -79,7 +79,7 @@ export default {
   computed: {
     sortedPosts() {
       const collection = collect(this.posts);
-      const numberOfPages = collection.chunk(1);
+      const numberOfPages = collection.chunk(2);
       this.totalPages = numberOfPages.all().length;
       const blogPosts = numberOfPages.all()[this.pageNumber - 1];
 
@@ -148,9 +148,9 @@ export default {
   object-fit: cover;
 }
 
-.blog-info {
+/* .blog-info {
   padding: 1em;
-}
+} */
 
 .blog-excerpt {
   color: white;
@@ -205,11 +205,10 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-  .blog-view {
-    padding: 1.5em;
+  /* .blog-view {
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .list-item {
     width: 100%;
