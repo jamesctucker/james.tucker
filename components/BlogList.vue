@@ -10,42 +10,29 @@
     <div class="bloglist-container">
       <ul class="list">
         <div v-for="post in sortedPosts" :key="post.attributes.title">
-          <li class="card list-item" :class="{ light: isLight }">
-            <div class="columns">
-              <div class="column is-3">
-                <img
-                  :src="post.attributes.hero_image"
-                  :alt="post.attributes.title"
-                  class="hero-image"
-                />
+          <li class="list-item" :class="{ light: isLight }">
+            <div class="blog-info">
+              <nuxt-link :to="`/blog/${post.attributes.slug}`">
+                <h2 class="blog-title title is-marginless">
+                  {{ post.attributes.title }}
+                </h2>
+              </nuxt-link>
+              <div class="is-flex">
+                <i class="blog-date" :class="{ light: isLight }">{{
+                  moment(post.attributes.date).format("MMMM D, YYYY")
+                }}</i>
+                <p>&nbsp;-&nbsp;</p>
+                <a
+                  class="post-tag"
+                  :class="{ light: isLight }"
+                  :href="`/blog/writing?tag=${post.attributes.tags[0]}`"
+                >
+                  <i>{{ post.attributes.tags[0] }}</i>
+                </a>
               </div>
-              <div class="column">
-                <div class="blog-info">
-                  <nuxt-link :to="`/blog/${post.attributes.slug}`">
-                    <h2 class="blog-title is-size-4 title is-marginless">
-                      {{ post.attributes.title }}
-                    </h2>
-                  </nuxt-link>
-                  <div class="is-flex">
-                    <i
-                      class="blog-date"
-                      :class="{ 'blog-date-light': isLight }"
-                      >{{
-                        moment(post.attributes.date).format("MMMM D, YYYY")
-                      }}</i
-                    >
-                    <p>&nbsp;-&nbsp;</p>
-                    <a
-                      class="post-tag"
-                      :href="`/blog/writing?tag=${post.attributes.tags[0]}`"
-                    >
-                      <i>{{ post.attributes.tags[0] }}</i>
-                    </a>
-                  </div>
-
-                  <p class="blog-excerpt">{{ post.attributes.excerpt }}</p>
-                </div>
-              </div>
+              <p class="blog-excerpt" :class="{ light: isLight }">
+                {{ post.attributes.excerpt }}
+              </p>
             </div>
           </li>
         </div>
@@ -155,22 +142,6 @@ export default {
   border-radius: 0px;
 }
 
-.card {
-  background: darkgrey;
-  padding: 0;
-}
-
-.light {
-  background: white;
-}
-
-.list-item:hover {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-left: 8px solid gray;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 .hero-image {
   width: 50vw;
   height: 100%;
@@ -181,21 +152,30 @@ export default {
   padding: 1em;
 }
 
+.blog-excerpt {
+  color: white;
+}
+
 .blog-title {
   cursor: pointer;
+  color: #f27045;
+}
+
+.blog-date {
+  color: white;
 }
 
 .post-tag {
   text-decoration: underline;
-  color: #4a4a4a;
+  color: white;
 }
 
 .column {
   padding: 0rem 0.75rem !important;
 }
 
-.blog-date-light {
-  color: gray;
+.light {
+  color: #113134;
 }
 
 .blog-excerpt {
@@ -220,7 +200,7 @@ export default {
 }
 
 .light-text {
-  color: white;
+  color: #113134;
 }
 
 @media only screen and (max-width: 768px) {
@@ -233,10 +213,6 @@ export default {
   .list-item {
     width: 100%;
     margin: 3em 0em;
-  }
-
-  .hero-image {
-    width: 100%;
   }
 
   .bloglist-container {

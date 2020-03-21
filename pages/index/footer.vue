@@ -36,7 +36,7 @@
     </div>
     <div class="is-pulled-right">
       <div class="text is-size-7-mobile" :class="{ 'light-text': isLight }">
-        © Copyright 2019
+        <p>© Copyright 2019-20</p>
       </div>
       <div class="text is-size-7-mobile" :class="{ 'light-text': isLight }">
         <p>
