@@ -12,10 +12,12 @@
         class="blog__info has-text-left"
         :class="{ 'border-light': isLight }"
       >
-        <h2 class="title article-title" :class="{ 'has-text-white': !isLight }">
+        <h2 class="article-title">
           {{ post.attributes.title }}
         </h2>
-        <p :class="{ 'has-text-white': !isLight }">{{ formattedDate }}</p>
+        <p class="article-date" :class="{ 'has-text-white': !isLight }">
+          {{ formattedDate }}
+        </p>
       </div>
       <div
         class="blog__body has-text-left is-size-6-desktop"
@@ -109,6 +111,14 @@ export default {
   padding: 0em 0em 1.75em 1.75em;
 }
 
+.article-title {
+  color: #f27045;
+}
+
+.article-date {
+  color: #113134;
+}
+
 .blog__hero {
   overflow: hidden;
   min-height: 300px;
@@ -142,6 +152,7 @@ export default {
   justify-content: center;
   word-wrap: break-word;
   font-family: "Gotu", sans-serif;
+  color: #113134;
 }
 
 .blog__tags {

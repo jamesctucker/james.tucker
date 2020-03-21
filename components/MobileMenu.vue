@@ -91,7 +91,7 @@ export default {
 .dropdown-menu {
   padding: 1em;
   width: 100vw;
-  filter: drop-shadow(3px 1px 2px black);
+  filter: drop-shadow(3px 1px 2px #113134);
 }
 .dropdown-content {
   flex-direction: column;

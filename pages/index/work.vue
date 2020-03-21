@@ -162,7 +162,7 @@ export default {
 }
 
 .light {
-  color: black;
+  color: #113134;
 }
 
 .portfolio-card {
@@ -194,7 +194,7 @@ export default {
 }
 
 .footer-link {
-  color: black;
+  color: #113134;
   font-family: "Taviraj", serif;
 }
 

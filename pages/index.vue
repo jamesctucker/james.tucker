@@ -203,6 +203,7 @@ p {
   background: transparent;
   border: none;
   font-family: "Gotu", sans-serif;
+  color: #113134;
 }
 
 .light-btn {

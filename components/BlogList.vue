@@ -41,7 +41,7 @@
           v-if="additionalPagesToDisplay"
           @click="showNextPage"
           class="button pagination-btn is-size-6 is-pulled-right"
-          :class="{ 'light-text': !isLight }"
+          :class="{ 'light-text': isLight }"
         >
           Older
           <font-awesome-icon icon="arrow-right" style="margin-right: .5em" />
@@ -50,7 +50,7 @@
           v-if="olderPagesExist"
           @click="showPreviousPage"
           class="button pagination-btn is-size-6 is-pulled-left"
-          :class="{ 'light-text': !isLight }"
+          :class="{ 'light-text': isLight }"
         >
           <font-awesome-icon
             icon="arrow-left"
@@ -193,6 +193,7 @@ export default {
   border: none;
   padding: 1em;
   font-family: "Gotu", sans-serif;
+  color: white !important;
 }
 
 .pagination-btn:hover {
@@ -200,7 +201,7 @@ export default {
 }
 
 .light-text {
-  color: #113134;
+  color: #113134 !important;
 }
 
 @media only screen and (max-width: 768px) {

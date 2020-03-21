@@ -27,7 +27,7 @@ export default {
 }
 
 .light {
-  color: black;
+  color: #113134;
 }
 
 @media only screen and (max-width: 768px) {
