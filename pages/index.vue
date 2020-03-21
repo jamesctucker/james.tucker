@@ -36,7 +36,12 @@
       >
     </div>
     <Home v-if="$route.name == 'index'" :isLight="isLight" />
-    <Links v-if="isPost" :isLight="isLight" class="is-hidden-mobile" />
+    <Links
+      v-if="isPost"
+      :isLight="isLight"
+      class="is-hidden-mobile"
+      style="margin: 2em 0em; padding: 1.75em"
+    />
     <nuxt-child :isLight="isLight" class="main-children" />
     <Links
       v-if="!isPost"

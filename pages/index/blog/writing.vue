@@ -52,6 +52,13 @@ export default {
 </script>
 <style scoped>
 .writing-view {
-  margin: 3em 0em;
+  padding: 1.75em;
+  width: 60vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .writing-view {
+    width: 100%;
+  }
 }
 </style>

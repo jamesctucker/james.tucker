@@ -135,15 +135,14 @@ export default {
 </script>
 <style scoped>
 .blog-view {
-  padding: 3em;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
 }
 
-.bloglist-container {
-  width: 50vw;
-}
+/* .bloglist-container {
+  width: vw;
+} */
 
 .list {
   background: transparent;
@@ -152,7 +151,7 @@ export default {
 
 .list-item {
   /* border: 0.25px solid black; */
-  margin: 1.25em;
+  margin: 1.25em 0em;
   border-radius: 0px;
 }
 

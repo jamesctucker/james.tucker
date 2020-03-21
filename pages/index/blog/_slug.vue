@@ -1,27 +1,34 @@
 <template>
   <section class="article-view is-paddingless">
     <div class="article">
-      <figure class="blog__hero">
-        <img :src="post.attributes.hero_image" :alt="post.attributes.title" class="hero-img" />
-      </figure>
-      <div class="blog__info">
-        <h1
-          class="title article-title"
-          :class="{ 'has-text-white': !isLight }"
-        >{{ post.attributes.title }}</h1>
+      <!-- <figure class="blog__hero">
+        <img
+          :src="post.attributes.hero_image"
+          :alt="post.attributes.title"
+          class="hero-img"
+        />
+      </figure> -->
+      <div class="blog__info has-text-left">
+        <h1 class="title article-title" :class="{ 'has-text-white': !isLight }">
+          {{ post.attributes.title }}
+        </h1>
         <h3 :class="{ 'has-text-white': !isLight }">{{ formattedDate }}</h3>
       </div>
       <div
-        class="blog__body is-size-5-desktop"
+        class="blog__body has-text-left is-size-6-desktop"
         :class="{ 'has-text-white': !isLight }"
         v-html="post.html"
       ></div>
       <div class="blog__tags">
         <div class="tag" v-for="tag in post.attributes.tags" :key="tag.id">
-          <a class="has-text-white is-size-6" :href="`/blog/writing?tag=${tag}`">{{tag}}</a>
+          <a
+            class="has-text-white is-size-6"
+            :href="`/blog/writing?tag=${tag}`"
+            >{{ tag }}</a
+          >
         </div>
       </div>
-      <div class="blog__comments" :class="{ 'bg': isLight }">
+      <div class="blog__comments" :class="{ bg: isLight }">
         <vue-disqus
           v-if="disqus_id"
           shortname="https-jamestucker-dev-1"
@@ -88,6 +95,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  width: 65vw;
 }
 
 .article {
@@ -95,8 +103,7 @@ export default {
   flex-direction: column;
   align-items: center;
   left: 0;
-  padding: 3em;
-  width: 60vw;
+  padding: 1.75em;
 }
 
 .blog__hero {
