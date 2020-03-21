@@ -8,7 +8,10 @@
           class="hero-img"
         />
       </figure> -->
-      <div class="blog__info has-text-left">
+      <div
+        class="blog__info has-text-left"
+        :class="{ 'border-light': isLight }"
+      >
         <h2 class="title article-title" :class="{ 'has-text-white': !isLight }">
           {{ post.attributes.title }}
         </h2>
@@ -28,14 +31,14 @@
           >
         </div>
       </div>
-      <div class="blog__comments" :class="{ bg: isLight }">
+      <!-- <div class="blog__comments" :class="{ bg: isLight }">
         <vue-disqus
           v-if="disqus_id"
           shortname="https-jamestucker-dev-1"
           :identifier="disqus_id"
           class="vue-disqus"
         ></vue-disqus>
-      </div>
+      </div> -->
       <!-- <div class="blog__footer">
         <h2 :class="{ 'has-text-white': !isLight }">Written By: {{ post.attributes.author }}</h2>
       </div>-->
@@ -124,11 +127,16 @@ export default {
   padding: 1.5rem 1.25rem;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px dotted white;
+}
+
+.border-light {
+  border-bottom: 1px dotted #113134;
 }
 
 .blog__body {
   width: 100%;
-  margin: 0 auto;
+  margin: 1.75em 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +164,7 @@ export default {
 }
 
 .bg {
-  background: #2f3336;
+  background: #113134;
 }
 
 .vue-disqus {
