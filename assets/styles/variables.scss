@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Bulma Overrides
+
+// Colors
+
+$balsam: #113134;
+
+// Element styles
+
+$hr-background-color: transparent;
+
+@import "~bulma";
