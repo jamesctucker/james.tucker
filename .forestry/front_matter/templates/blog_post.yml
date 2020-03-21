@@ -35,9 +35,6 @@ fields:
   label: date
   config:
     required: true
-- type: file
-  name: hero_image
-  label: hero_image
 - name: slug
   type: text
   config:
