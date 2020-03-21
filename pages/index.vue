@@ -3,7 +3,7 @@
     <!-- <Home :isLight="isLight" /> -->
     <div @click="toggleDropDown">
       <MobileMenu
-        class="mobile-menu is-hidden-desktop"
+        class="mobile-menu is-hidden-tablet"
         :showDropDown="isToggled"
         :isLight="isLight"
       />
@@ -140,15 +140,17 @@ export default {
 
 h3 {
   font-family: "Taviraj", serif;
-  font-size: 4vmax;
+  font-size: 2vmax;
 }
 
 h2 {
   font-family: "Taviraj", serif;
+  font-size: 3vmax;
 }
 
 h1 {
   font-family: "Taviraj", serif;
+  font-size: 4vmax;
 }
 
 p {

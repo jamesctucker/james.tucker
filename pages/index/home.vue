@@ -3,13 +3,13 @@
     <div class="columns">
       <div class="column">
         <div class="text-container has-text-centered-touch">
-          <h3
+          <h1
             class="has-text-left"
             :class="{ 'white-text': !isLight, 'dark-text': isLight }"
           >
             👋 Hi, I’m James. I’m a full stack developer that loves beautiful
             design.
-          </h3>
+          </h1>
           <br />
           <p
             class="subtitle"

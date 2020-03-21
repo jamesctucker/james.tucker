@@ -9,10 +9,10 @@
         />
       </figure> -->
       <div class="blog__info has-text-left">
-        <h1 class="title article-title" :class="{ 'has-text-white': !isLight }">
+        <h2 class="title article-title" :class="{ 'has-text-white': !isLight }">
           {{ post.attributes.title }}
-        </h1>
-        <h3 :class="{ 'has-text-white': !isLight }">{{ formattedDate }}</h3>
+        </h2>
+        <p :class="{ 'has-text-white': !isLight }">{{ formattedDate }}</p>
       </div>
       <div
         class="blog__body has-text-left is-size-6-desktop"
