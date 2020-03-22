@@ -44,7 +44,6 @@ export default {
 <style scoped>
 .home-view {
   min-height: 60vh;
-  width: 75vw;
   display: flex;
   align-items: center;
 }
@@ -53,7 +52,7 @@ export default {
   min-width: 60vw;
 } */
 .subtitle {
-  width: 45vw;
+  width: 40vw;
   text-align: left;
 }
 

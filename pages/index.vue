@@ -130,7 +130,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   background: #113134;
-  padding: 1.75em;
+  padding: 3em;
 }
 
 h3 {
@@ -145,7 +145,7 @@ h2 {
 
 h1 {
   font-family: "Taviraj", serif;
-  font-size: 4vmax;
+  font-size: 4.5vmax;
 }
 
 p {
@@ -223,5 +223,11 @@ p {
 .slide-fade-leave-to {
   transform: translate(-25%, 0);
   opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 1em;
+  }
 }
 </style>
