@@ -3,7 +3,7 @@
     <div class="shake">
       <nuxt-link
         to="/"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >Home</nuxt-link
       >
@@ -11,7 +11,7 @@
     <div class="shake">
       <nuxt-link
         to="/About"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >About</nuxt-link
       >
@@ -19,7 +19,7 @@
     <div class="shake">
       <nuxt-link
         to="/Work"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >Projects</nuxt-link
       >
@@ -27,7 +27,7 @@
     <div class="shake">
       <nuxt-link
         to="/blog/writing"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >Writing</nuxt-link
       >
@@ -35,7 +35,7 @@
     <div class="shake">
       <nuxt-link
         to="/Speaking"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >Speaking</nuxt-link
       >
@@ -43,7 +43,7 @@
     <div class="shake">
       <a
         :href="`mailto: ${user.email}`"
-        class="link-text is-size-4 is-size-7-mobile"
+        class="link-text is-size-3 is-size-7-mobile"
         :class="{ 'light-link-text': !isLight }"
         >Contact</a
       >
