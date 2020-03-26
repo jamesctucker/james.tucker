@@ -11,11 +11,7 @@
       </div>
 
       <div class="display-togglers is-pulled-right is-paddingless">
-        <button
-          v-if="isLight"
-          @click="toggleDark"
-          class="dark-btn is-size-5 is-size-6-mobile"
-        >
+        <button v-if="isLight" @click="toggleDark" class="dark-btn is-size-5 is-size-6-mobile">
           <font-awesome-icon icon="moon" style="margin-right: .5em" />DARK MODE
         </button>
         <button
@@ -33,17 +29,11 @@
           @click="$router.go(-1)"
           class="home is-size-5 is-size-6-mobile"
           :class="{ 'home-toggled': isLight }"
-          >back</a
-        >
+        >back</a>
       </div>
     </div>
     <Home v-if="$route.name == 'index'" :isLight="isLight" />
-    <Links
-      v-if="isPost"
-      :isLight="isLight"
-      class="is-hidden-mobile"
-      style="margin: 2em 0em 0em;"
-    />
+    <Links v-if="isPost" :isLight="isLight" class="is-hidden-mobile" style="margin: 2em 0em 0em;" />
     <nuxt-child :isLight="isLight" class="main-children" />
     <Links v-if="!isPost" :isLight="isLight" class="is-hidden-mobile" />
     <Footer :isLight="isLight" />
@@ -130,7 +120,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   background: #113134;
-  padding: 3em;
+  padding: 4em;
 }
 
 h3 {
@@ -227,7 +217,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   .main-container {
-    padding: 1em;
+    padding: 1.75em;
   }
 }
 </style>
