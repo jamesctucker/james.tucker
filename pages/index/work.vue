@@ -28,6 +28,7 @@
               class="footer-link"
               href="https://kivahero.app/#/"
               target="_blank"
+              rel="noopener noreferrer"
               >View App</a
             >
           </span>
@@ -38,6 +39,7 @@
               class="footer-link"
               href="https://github.com/jamesctucker/kiva_hero"
               target="_blank"
+              rel="noopener noreferrer"
               >Github</a
             >
           </span>
@@ -76,6 +78,7 @@
               class="footer-link"
               href="https://journeytellr.herokuapp.com/"
               target="_blank"
+              rel="noopener noreferrer"
               >View App</a
             >
           </span>
@@ -86,6 +89,7 @@
               class="footer-link"
               href="https://github.com/jamesctucker/JourneyTellr"
               target="_blank"
+              rel="noopener noreferrer"
               >Github</a
             >
           </span>
@@ -121,7 +125,11 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="footer-link" href="https://book.soona.co" target="_blank"
+            <a
+              class="footer-link"
+              href="https://book.soona.co"
+              target="_blank"
+              rel="noopener noreferrer"
               >View App</a
             >
           </span>
