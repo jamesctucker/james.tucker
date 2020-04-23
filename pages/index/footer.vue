@@ -1,7 +1,11 @@
 <template>
   <div class="footer" :class="{ light: isLight }">
     <div class="is-pulled-left is-hidden-mobile">
-      <a href="https://github.com/jamesctucker" target="_blank">
+      <a
+        href="https://github.com/jamesctucker"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <font-awesome-icon
           :icon="['fab', 'github']"
           class="social-icon is-hidden-mobile"
@@ -9,7 +13,11 @@
           size="lg"
         />
       </a>
-      <a href="https://linkedin.com/in/jtuckermn" target="_blank">
+      <a
+        href="https://linkedin.com/in/jtuckermn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <font-awesome-icon
           :icon="['fab', 'linkedin']"
           class="social-icon is-hidden-mobile"
@@ -17,7 +25,11 @@
           size="lg"
         />
       </a>
-      <a href="https://instagram.com/jtuckermn" target="_blank">
+      <a
+        href="https://instagram.com/jtuckermn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <font-awesome-icon
           :icon="['fab', 'instagram']"
           class="social-icon is-hidden-mobile"
@@ -25,9 +37,25 @@
           size="lg"
         />
       </a>
-      <a href="https://medium.com/@jchristophertucker" target="_blank">
+      <a
+        href="https://medium.com/@jchristophertucker"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <font-awesome-icon
           :icon="['fab', 'medium']"
+          class="social-icon is-hidden-mobile"
+          :class="{ 'light-text': isLight }"
+          size="lg"
+        />
+      </a>
+      <a
+        href="https://twitter.com/tucker_dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <font-awesome-icon
+          :icon="['fab', 'twitter']"
           class="social-icon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
