@@ -72,7 +72,10 @@
         </p>
         <p>
           Proudly made with
-          <a href="https://vuejs.org/" target="_blank">Vue</a> & lots of Scotch
+          <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
+            >Vue</a
+          >
+          & lots of Scotch
         </p>
       </div>
     </div>
@@ -86,7 +89,10 @@
         </p>
         <p>
           Proudly made with
-          <a href="https://vuejs.org/" target="_blank">Vue</a> & lots of Scotch
+          <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
+            >Vue</a
+          >
+          & lots of Scotch
         </p>
       </div>
     </div>

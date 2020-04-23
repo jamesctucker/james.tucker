@@ -16,7 +16,11 @@
             :class="{ 'white-text': !isLight, 'dark-text': isLight }"
           >
             I currently work at
-            <a href="https://soona.co" target="_blank" class="external-link"
+            <a
+              href="https://soona.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external-link"
               >soona</a
             >
             in Minneapolis, where I'm helping build a PaaS for fast casual
