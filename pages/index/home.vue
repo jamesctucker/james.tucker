@@ -7,7 +7,7 @@
             class="has-text-left"
             :class="{ 'white-text': !isLight, 'dark-text': isLight }"
           >
-            👋 Hi, I’m James. I’m a full stack developer who loves beautiful
+            Hi, I’m James. I’m a full stack developer who loves beautiful
             design.
           </h1>
           <br />
