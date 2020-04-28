@@ -1,67 +1,64 @@
-import path from 'path';
-const glob = require('glob');
-const config = require("./content/data/config.json")
+import path from "path";
+const glob = require("glob");
+const config = require("./content/data/config.json");
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  'blog/writing': 'content/blog_posts/*.md',
- });
-
+  "blog/writing": "content/blog_posts/*.md"
+});
 
 export default {
-  mode: 'spa',
+  mode: "spa",
   server: {
     port: 8800, // default: 3000
-    host: '0.0.0.0' // default: localhost
+    host: "0.0.0.0" // default: localhost
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: 'James Tucker',
+    title: "James Tucker",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
+  css: ["./assets/fonts/gotu.css", "./assets/fonts/taviraj.css"],
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: ["~/plugins/fontawesome.js", "~/plugins/disqus"],
   css: [
+    "@fortawesome/fontawesome-svg-core/styles.css",
+    { src: "~/assets/styles/variables.scss", lang: "scss" }
   ],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '~/plugins/fontawesome.js',
-    '~/plugins/disqus'
-  ],
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    { src: '~/assets/styles/variables.scss', lang: 'scss' }
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // '@nuxtjs/router'
   ],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     // '@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa"
     // '@nuxtjs/style-resources'
   ],
   // styleResources: {
@@ -70,14 +67,13 @@ export default {
   //   ]
   // },
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     postcss: {
       preset: {
@@ -87,22 +83,21 @@ export default {
       }
     },
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-      config.module.rules.push(
-        {
-            test: /\.md$/,
-            loader: "frontmatter-markdown-loader",
-            include: path.resolve(__dirname, "content/blog_posts"),
-            options: {
-              markdownIt: {
-                html: true,
-                linkify: true,
-                breaks: true
-              }
-            }
-        })
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: "frontmatter-markdown-loader",
+        include: path.resolve(__dirname, "content/blog_posts"),
+        options: {
+          markdownIt: {
+            html: true,
+            linkify: true,
+            breaks: true
+          }
+        }
+      });
     }
   },
   generate: {
@@ -110,13 +105,13 @@ export default {
   },
   // or
   pageTransition: {
-    name: 'slide-fade',
-    mode: 'out-in',
+    name: "slide-fade",
+    mode: "out-in",
     duration: 300
   }
-}
+};
 
- /**
+/**
  * Create an array of URLs from a list of files
  * @param {*} urlFilepathTable
  */
@@ -128,8 +123,8 @@ function getDynamicPaths(urlFilepathTable) {
       const filepathGlob = urlFilepathTable[url];
       const routes = glob
         .sync(filepathGlob)
-        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
-      return routes
+        .map(filepath => `${url}/${path.basename(filepath, ".md")}`);
+      return routes;
     })
   );
 }
