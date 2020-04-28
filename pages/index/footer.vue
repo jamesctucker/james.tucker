@@ -8,7 +8,7 @@
       >
         <font-awesome-icon
           :icon="['fab', 'github']"
-          class="social-icon is-hidden-mobile"
+          class="socialicon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
         />
@@ -20,7 +20,7 @@
       >
         <font-awesome-icon
           :icon="['fab', 'linkedin']"
-          class="social-icon is-hidden-mobile"
+          class="socialicon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
         />
@@ -32,7 +32,7 @@
       >
         <font-awesome-icon
           :icon="['fab', 'instagram']"
-          class="social-icon is-hidden-mobile"
+          class="socialicon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
         />
@@ -44,7 +44,7 @@
       >
         <font-awesome-icon
           :icon="['fab', 'medium']"
-          class="social-icon is-hidden-mobile"
+          class="socialicon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
         />
@@ -56,7 +56,7 @@
       >
         <font-awesome-icon
           :icon="['fab', 'twitter']"
-          class="social-icon is-hidden-mobile"
+          class="socialicon is-hidden-mobile"
           :class="{ 'light-text': isLight }"
           size="lg"
         />
@@ -106,7 +106,7 @@ export default {
   justify-content: center; */
 }
 
-.social-icon {
+.socialicon {
   margin: 0.5em 0.5em 0em 0em;
   color: white;
 }

@@ -9,8 +9,9 @@ const dynamicRoutes = getDynamicPaths({
 export default {
   mode: "spa",
   server: {
-    port: 8800, // default: 3000
-    host: "0.0.0.0" // default: localhost
+    // port: 8800, // default: 3000
+    // host: "0.0.0.0" // default: localhost
+    host: ""
   },
   /*
    ** Headers of the page
