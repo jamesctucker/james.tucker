@@ -68,14 +68,7 @@
       </div>
       <div class="text" :class="{ 'light-text': isLight }">
         <p>
-          Theme by James Tucker
-        </p>
-        <p>
-          Proudly made with
-          <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
-            >Vue</a
-          >
-          & lots of Scotch
+          Proudly made with Nuxt.js & lots of Scotch
         </p>
       </div>
     </div>
@@ -85,14 +78,7 @@
       </div>
       <div class="text" :class="{ 'light-text': isLight }">
         <p>
-          Theme by James Tucker
-        </p>
-        <p>
-          Proudly made with
-          <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
-            >Vue</a
-          >
-          & lots of Scotch
+          Proudly made with Nuxt.js & lots of Scotch
         </p>
       </div>
     </div>
