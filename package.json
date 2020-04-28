@@ -1,7 +1,7 @@
 {
-  "name": "pw-3.0",
+  "name": "jamestucker.dev",
   "version": "1.0.0",
-  "description": "My swell Nuxt.js project",
+  "description": "My portfolio and blog.",
   "author": "James C. Tucker",
   "private": true,
   "scripts": {
