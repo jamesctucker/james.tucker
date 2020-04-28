@@ -1,11 +1,7 @@
 <template>
   <div class="dropdown" :class="{ 'is-active': showDropDown }">
     <div class="dropdown-trigger">
-      <button
-        class="button dropdown-button is-paddingless"
-        aria-haspopup="true"
-        aria-controls="dropdown-menu"
-      >
+      <button class="button dropdown-button is-paddingless">
         <font-awesome-icon
           icon="bars"
           style="margin-right: .5em"
