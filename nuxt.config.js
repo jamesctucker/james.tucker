@@ -103,13 +103,13 @@ export default {
   },
   generate: {
     routes: dynamicRoutes
-  },
-  // or
-  pageTransition: {
-    name: "slide-fade",
-    mode: "out-in",
-    duration: 300
   }
+  // or
+  // pageTransition: {
+  //   name: "slide-fade",
+  //   mode: "in-out",
+  //   duration: 500
+  // }
 };
 
 /**
