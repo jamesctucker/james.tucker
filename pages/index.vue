@@ -11,7 +11,11 @@
       </div>
 
       <div class="display-togglers is-pulled-right is-paddingless">
-        <button v-if="isLight" @click="toggleDark" class="dark-btn is-size-5 is-size-6-mobile">
+        <button
+          v-if="isLight"
+          @click="toggleDark"
+          class="dark-btn is-size-5 is-size-6-mobile"
+        >
           <font-awesome-icon icon="moon" style="margin-right: .5em" />DARK MODE
         </button>
         <button
@@ -29,11 +33,17 @@
           @click="$router.go(-1)"
           class="home is-size-5 is-size-6-mobile"
           :class="{ 'home-toggled': isLight }"
-        >back</a>
+          >back</a
+        >
       </div>
     </div>
     <Home v-if="$route.name == 'index'" :isLight="isLight" />
-    <Links v-if="isPost" :isLight="isLight" class="is-hidden-mobile" style="margin: 2em 0em 0em;" />
+    <Links
+      v-if="isPost"
+      :isLight="isLight"
+      class="is-hidden-mobile"
+      style="margin: 2em 0em 0em;"
+    />
     <nuxt-child :isLight="isLight" class="main-children" />
     <Links v-if="!isPost" :isLight="isLight" class="is-hidden-mobile" />
     <Footer :isLight="isLight" />
@@ -110,7 +120,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Taviraj&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gotu|Taviraj&display=swap");
 
 .main-container {
