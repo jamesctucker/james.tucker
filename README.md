@@ -1,9 +1,5 @@
 # Jamestucker.dev
 
-> Personal Website
-
-## Hey!
-
 After originally building my site with a React template published by Creative Tim, I decided to create a custom-built site 
 with Vue/Nuxt.js that integrated with a CMS. I'm really happy with my decision! I'm a Vue fanatic, if you didn't know already, and highly recommend using it as the foundation for your own personal website.
 
