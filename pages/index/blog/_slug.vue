@@ -20,7 +20,7 @@
         </p>
       </div>
       <div
-        class="blog__body has-text-left is-size-6-desktop"
+        class="blog__body has-text-left is-size-5-desktop"
         :class="{ 'has-text-white': !isLight }"
         v-html="post.html"
       ></div>
@@ -192,7 +192,7 @@ export default {
     height: 50vh;
   }
   .blog__info {
-    padding: 3rem 0;
+    padding: 3rem 0 1rem 0;
   }
 }
 
