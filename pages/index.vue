@@ -193,7 +193,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .main-children {
-    margin: 3em 0em;
+    margin: 0.5em 0em;
   }
 
   .back-button {

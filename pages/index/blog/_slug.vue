@@ -1,13 +1,13 @@
 <template>
   <section class="article-view is-paddingless">
     <div class="article">
-      <!-- <figure class="blog__hero">
+      <figure class="blog__hero image is-16by9">
         <img
           :src="post.attributes.hero_image"
           :alt="post.attributes.title"
           class="hero-img"
         />
-      </figure> -->
+      </figure>
       <div
         class="blog__info has-text-left"
         :class="{ 'border-light': isLight }"
@@ -109,21 +109,19 @@ export default {
 
 .blog__hero {
   overflow: hidden;
-  min-height: 300px;
-  height: 40vh;
-  margin: 0;
+  margin: 2em 0 0;
   width: 100%;
+  position: relative;
 }
 
 .hero-img {
   object-fit: cover;
-  height: 100%;
 }
 
 .blog__info {
   text-align: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem 0rem;
   border-bottom: 1px dotted white;
 }
 
@@ -177,22 +175,16 @@ export default {
   .blog__body {
     width: 100%;
   }
-  .blog__hero {
-    min-height: 600px;
-    height: 75vh;
-  }
+
   .blog__info {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
 
 @media (min-width: 1440px) {
-  .blog__hero {
-    height: 50vh;
-  }
   .blog__info {
-    padding: 3rem 0 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 
@@ -204,10 +196,6 @@ export default {
 
   .article-view {
     width: 100%;
-  }
-
-  .blog__hero {
-    height: 40vh;
   }
 
   .blog__comments {
