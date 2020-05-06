@@ -145,7 +145,7 @@ h2 {
 
 h1 {
   font-family: "Taviraj", serif;
-  font-size: 4.5vmax;
+  font-size: 4vmax;
 }
 
 p {

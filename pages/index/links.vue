@@ -68,7 +68,7 @@ export default {
   color: #113134;
   font-family: "Taviraj", serif;
   margin-right: 1em;
-  font-size: 3vmax;
+  font-size: 2.5vmax;
 }
 
 .light-link-text {
