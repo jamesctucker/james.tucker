@@ -2,6 +2,11 @@
 label: Blog Post
 hide_body: false
 fields:
+- name: hero_image
+  type: file
+  config:
+    maxSize: 250
+  label: hero image
 - type: text
   name: title
   label: title
