@@ -16,7 +16,7 @@
           {{ post.attributes.title }}
         </h2>
         <p class="article-date" :class="{ 'has-text-white': !isLight }">
-          {{ formattedDate }}
+          {{ post.attributes.date | moment("MMMM Do, YYYY") }}
         </p>
       </div>
       <div
@@ -48,7 +48,6 @@
   </section>
 </template>
 <script>
-import moment from "moment";
 export default {
   props: {
     isLight: Boolean
@@ -61,11 +60,6 @@ export default {
   created() {
     this.disqus_id = this.$route.path;
     console.log(this.post);
-  },
-  computed: {
-    formattedDate() {
-      return moment(this.post.attributes.date).format("MMMM Do, YYYY");
-    }
   },
   // get the slug as a param to import the correct md file
   async asyncData({ params }) {
@@ -86,11 +80,6 @@ export default {
     } catch (err) {
       console.debug(err);
       return false;
-    }
-  },
-  methods: {
-    moment() {
-      return moment();
     }
   }
 };

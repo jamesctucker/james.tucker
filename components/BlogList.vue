@@ -19,7 +19,7 @@
               </nuxt-link>
               <div class="is-flex">
                 <i class="blog-date" :class="{ light: isLight }">{{
-                  moment(post.attributes.date).format("MMMM D, YYYY")
+                  post.attributes.date | moment("MMMM D, YYYY")
                 }}</i>
                 <p>&nbsp;-&nbsp;</p>
                 <a
@@ -62,7 +62,6 @@
   </div>
 </template>
 <script>
-import moment from "moment";
 const collect = require("collect.js");
 
 export default {
