@@ -5,7 +5,7 @@ fields:
 - name: hero_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: hero image
 - type: text
   name: title
