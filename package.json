@@ -22,7 +22,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "collect.js": "^4.20.2",
     "frontmatter-markdown-loader": "^3.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
     "sass-loader": "^8.0.0",
     "vue-disqus": "^3.0.5",
